@@ -1,2 +1,7 @@
 stuff
-rust-stuff/target
+
+rust-stuff/target/*
+!rust-stuff/target/x86_64-unknown-linux-musl
+
+rust-stuff/target/x86_64-unknown-linux-musl/release/*
+!rust-stuff/target/x86_64-unknown-linux-musl/release/rust-stuff
