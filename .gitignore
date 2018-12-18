@@ -1,7 +1,7 @@
 stuff
 
-rust-stuff/target/*
-!rust-stuff/target/x86_64-unknown-linux-musl
+docker-stuff/target/*
+!docker-stuff/target/x86_64-unknown-linux-musl
 
-rust-stuff/target/x86_64-unknown-linux-musl/release/*
-!rust-stuff/target/x86_64-unknown-linux-musl/release/rust-stuff
+docker-stuff/target/x86_64-unknown-linux-musl/release/*
+!docker-stuff/target/x86_64-unknown-linux-musl/release/docker-stuff

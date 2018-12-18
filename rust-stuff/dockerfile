@@ -1,7 +1,0 @@
-FROM alpine:3.8
-
-ADD ./target/x86_64-unknown-linux-musl/release/rust-stuff /entrypoint/rust-stuff
-
-ENTRYPOINT ["/entrypoint/rust-stuff"]
-
-EXPOSE 8080
