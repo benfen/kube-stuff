@@ -1,8 +1,14 @@
 use iron::prelude::*;
 use iron::status;
 
+static mut NUM: i32 = 0;
+
 fn handler(_: &mut Request) -> IronResult<Response> {
-    Ok(Response::with((status::Ok, "Hello, world!")))
+    unsafe {
+        let resp = format!("Hello: {}", NUM);
+        NUM += 1;
+        Ok(Response::with((status::Ok, resp)))
+    }
 }
 
 fn main() {
