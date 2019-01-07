@@ -9,8 +9,7 @@ Quick test stuff for docker and kubernetes
 * docker
 * minikube
 
-### Runnign the container on minikube
-* Go into the rust-stuff directory
-* Build the Rust binary: `cargo build --release --target x86_64-unknown-linux-musl`
-  * Step may be skipped if `cargo` is not installed
-* Run the kube script: `./kube.sh`
+### Running the container on minikube
+* Start minikube (or whatnot) on the machine
+* Run `kubectl create -f kube-config/` from the root of the repo
+  * To fetch the URL for the service, run `minikube service test-service --url`
